@@ -1,10 +1,23 @@
 @use './base' as b;
 
 .container {
+	@include b.respond(large) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+	}
+}
+
+.cards-box {
 	display: grid;
 	grid-template-columns: 1fr;
 
+	margin: 5.9em 1.6em;
+
 	@include b.respond(large) {
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: repeat(3, 1fr);
+		margin: auto;
+		max-width: 92.6rem;
 	}
 }

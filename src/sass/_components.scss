@@ -1,0 +1,32 @@
+@use './base' as b;
+
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	padding: 3.3em;
+	max-width: 326px;
+	min-height: 44.2rem;
+	border-radius: 0.9rem;
+
+	&--sedans {
+		background-color: b.$bright-orange;
+	}
+
+	&--suvs {
+		background-color: b.$dark-cyan;
+	}
+
+	&--luxury {
+		background-color: b.$very-dark-cyan;
+	}
+
+	&__heading {
+		font-family: b.$font-accent;
+		font-size: 3.5rem;
+		text-transform: uppercase;
+	}
+}
