@@ -1,0 +1,28 @@
+// media query manager
+@mixin respond($breakpoint) {
+	@if $breakpoint == medium {
+		@media (min-width: 768px) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == large {
+		@media (min-width: 992px) {
+			@content;
+		}
+	}
+}
+
+// colors manager
+// primary colors
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+// neutral colors
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+$very-light-gray: hsl(0, 0%, 95%);
+
+// fonts manager
+$font-basic: 'Lexend Deca', sans-serif;
+$font-accent: 'Big Shoulders Display', cursive;
