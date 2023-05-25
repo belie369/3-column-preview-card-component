@@ -40,6 +40,15 @@ html {
 	scroll-behavior: smooth;
 }
 
+body {
+	background-color: $very-light-gray;
+	color: $transparent-white;
+	font-family: $font-basic;
+	font-size: 1.5rem;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+}
+
 p,
 h1,
 h2,
