@@ -12,6 +12,10 @@
 	min-height: 44.2rem;
 	border-radius: 0.9rem;
 
+	@include b.respond(large) {
+		min-height: 49.85rem;
+	}
+
 	&--sedans {
 		background-color: b.$bright-orange;
 	}
@@ -25,8 +29,35 @@
 	}
 
 	&__heading {
+		color: b.$very-light-gray;
 		font-family: b.$font-accent;
-		font-size: 3.5rem;
+		font-size: 3.9rem;
 		text-transform: uppercase;
+	}
+
+	&__details {
+		color: b.$transparent-white;
+		line-height: 1.7;
+
+		@include b.respond(large) {
+			margin-bottom: 3.2em;
+		}
+	}
+
+	&__btn {
+		padding: 1em 2.2em;
+		border-radius: 10rem;
+
+		&--sedans {
+			color: b.$bright-orange;
+		}
+
+		&--suvs {
+			color: b.$dark-cyan;
+		}
+
+		&--luxury {
+			color: b.$dark-cyan;
+		}
 	}
 }
