@@ -10,10 +10,20 @@
 	padding: 3.3em;
 	max-width: 326px;
 	min-height: 44.2rem;
-	border-radius: 0.9rem;
+	// border-radius: 0.9rem;
 
 	@include b.respond(large) {
 		min-height: 49.85rem;
+	}
+
+	&:first-of-type {
+		border-top-left-radius: 0.9rem;
+		border-top-right-radius: 0.9rem;
+	}
+
+	&:last-of-type {
+		border-bottom-left-radius: 0.9rem;
+		border-bottom-right-radius: 0.9rem;
 	}
 
 	&--sedans {
