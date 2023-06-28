@@ -12,9 +12,13 @@
 
 	margin: 5.9em 1.6em;
 
+	@include b.respond(medium) {
+		margin: 5.9em 20vw;
+	}
+
 	@include b.respond(large) {
 		grid-template-columns: repeat(3, 1fr);
-		margin: auto;
+		margin: auto 0;
 		max-width: 92.6rem;
 	}
 }

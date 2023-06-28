@@ -1,7 +1,7 @@
 // media query manager
 @mixin respond($breakpoint) {
 	@if $breakpoint == medium {
-		@media (min-width: 768px) {
+		@media (min-width: 576px) {
 			@content;
 		}
 	}
@@ -71,7 +71,6 @@ button {
 	text-decoration: none;
 	cursor: pointer;
 }
-
 
 .visually-hidden:not(:focus):not(:active) {
 	position: absolute;
