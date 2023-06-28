@@ -1,12 +1,9 @@
 @use './base' as b;
 
 .container {
-	@include b.respond(large) {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		min-height: 100vh;
-	}
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
 }
 
 .cards-box {
