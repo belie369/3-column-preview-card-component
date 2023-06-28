@@ -19,11 +19,22 @@
 	&:first-of-type {
 		border-top-left-radius: 0.9rem;
 		border-top-right-radius: 0.9rem;
+
+		@include b.respond(large) {
+			border-top-left-radius: 0.9rem;
+			border-top-right-radius: 0;
+			border-bottom-left-radius: 0.9rem;
+		}
 	}
 
 	&:last-of-type {
 		border-bottom-left-radius: 0.9rem;
 		border-bottom-right-radius: 0.9rem;
+
+		@include b.respond(large) {
+			border-top-right-radius: 0.9rem;
+			border-bottom-left-radius: 0;
+		}
 	}
 
 	&--sedans {
