@@ -1,16 +1,20 @@
 @use './base' as b;
 
 .card {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: flex-start;
+	// display: flex;
+	// flex-wrap: wrap;
+	// flex-direction: column;
+	// justify-content: space-between;
+	// align-items: flex-start;
 
-	padding: 3.3em;
+	display: grid;
+	justify-items: start;
+	align-items: center;
+	gap: 3.3rem;
+
+	padding: 3em 3.3em;
 	min-width: 32.6rem;
 	min-height: 44.2rem;
-	// border-radius: 0.9rem;
 
 	@include b.respond(large) {
 		min-width: auto;
@@ -59,10 +63,10 @@
 
 	&__details {
 		color: b.$transparent-white;
-		line-height: 1.7;
+		line-height: 1.65;
 
 		@include b.respond(large) {
-			margin-bottom: 3.2em;
+			margin-bottom: 3.4em;
 		}
 	}
 
