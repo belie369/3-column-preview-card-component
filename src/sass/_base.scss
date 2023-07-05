@@ -70,6 +70,7 @@ button {
 	border: none;
 	text-decoration: none;
 	cursor: pointer;
+	outline: none;
 }
 
 a {
@@ -81,9 +82,11 @@ a {
 	transform: translateY(-0.03rem);
 	transition: background-color 0.2s, color 0.2s;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		background-color: darkcyan;
 		color: $very-light-gray;
+		outline: none;
 	}
 }
 

@@ -77,7 +77,8 @@
 		border-radius: 10rem;
 		transition: background-color 0.3s, color 0.2s;
 
-		&:hover {
+		&:hover,
+		&:focus {
 			background-color: unset;
 			color: b.$very-light-gray;
 			border: 1px solid b.$very-light-gray;
