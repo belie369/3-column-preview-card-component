@@ -72,6 +72,21 @@ button {
 	cursor: pointer;
 }
 
+a {
+	display: inline-block;
+	padding: 0.1em;
+	color: $dark-cyan;
+	text-decoration: none;
+	font-weight: 400;
+	transform: translateY(-0.03rem);
+	transition: background-color 0.2s, color 0.2s;
+
+	&:hover {
+		background-color: darkcyan;
+		color: $very-light-gray;
+	}
+}
+
 .visually-hidden:not(:focus):not(:active) {
 	position: absolute;
 	width: 1px;
@@ -80,4 +95,8 @@ button {
 	clip-path: inset(50%);
 	white-space: nowrap;
 	overflow: hidden;
+}
+
+.footer {
+	color: $very-dark-cyan;
 }
