@@ -18,7 +18,7 @@
 
 	@include b.respond(large) {
 		min-width: auto;
-		min-height: 49.85rem;
+		min-height: 50rem;
 	}
 
 	&:first-of-type {
@@ -66,13 +66,22 @@
 		line-height: 1.65;
 
 		@include b.respond(large) {
-			margin-bottom: 3.4em;
+			margin-bottom: 3.2em;
 		}
 	}
 
 	&__btn {
-		padding: 1em 2.2em;
+		padding: 0.9em 2.2em;
+		background-color: b.$very-light-gray;
+		border: 1px solid b.$very-light-gray;
 		border-radius: 10rem;
+		transition: background-color 0.3s, color 0.2s;
+
+		&:hover {
+			background-color: unset;
+			color: b.$very-light-gray;
+			border: 1px solid b.$very-light-gray;
+		}
 
 		&--sedans {
 			color: b.$bright-orange;
@@ -83,7 +92,7 @@
 		}
 
 		&--luxury {
-			color: b.$dark-cyan;
+			color: b.$very-dark-cyan;
 		}
 	}
 }
