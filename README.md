@@ -44,6 +44,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - SASS SCSS
 - BEM methodology
+- Grid
 - Flexbox
 - Mobile-first workflow
 - Gulp
